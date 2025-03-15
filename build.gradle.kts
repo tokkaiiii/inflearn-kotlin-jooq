@@ -73,6 +73,7 @@ flyway {
     user = dbUsername
     password = dbPassword
     locations = arrayOf("classpath:db/migration")
+    cleanDisabled = true
 }
 
 jooq {
