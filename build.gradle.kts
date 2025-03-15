@@ -1,3 +1,15 @@
+// Flyway 와 MySQL 드라이버를 빌드 시점에 사용할 수 있게 함
+buildscript {
+    repositories{
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("org.flywaydb:flyway-mysql:10.8.1")
+        classpath("com.mysql:mysql-connector-j:8.0.33")
+    }
+}
+
 plugins {
     kotlin("jvm") version "1.9.25"
     kotlin("plugin.spring") version "1.9.25"
