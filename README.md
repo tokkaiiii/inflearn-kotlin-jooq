@@ -1,1 +1,0 @@
-# inflearn-kotlin-jooq
